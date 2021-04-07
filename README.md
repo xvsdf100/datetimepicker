@@ -1,3 +1,14 @@
+##补充
+ie8 不能赋值问题【ie8 jquery要2.0以下的版本】
+```
+            $('#test').on('blur', function(e){
+                console.log("test blur")
+                e.stopImmediatePropagation()
+            })
+```
+在ie8选择时间就触发blur事件，这个事件会导致时间选择器先关闭，从而导致无法赋值，我分析半天代码，算是一个解决方案吧。暂时这样子，没有发现其他的问题。
+test 是 测试iput的 id.
+
 # jQuery DateTimePicker
 [Demo and Documentation](https://xdsoft.net/jqplugins/datetimepicker/)
 
