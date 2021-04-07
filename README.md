@@ -1,4 +1,4 @@
-##补充
+## 补充
 ie8 不能赋值问题【ie8 jquery要2.0以下的版本】
 ```
             $('#test').on('blur', function(e){
